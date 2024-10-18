@@ -1,0 +1,142 @@
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animal Crossing New Horizons</title>
+  <style>
+    h1{
+  text-align: center;
+  color: #000;
+  border: 1px solid #000;
+  padding: 15px;
+  border-radius: 4px;
+  background-image: linear-gradient(45deg, #28FFBF , #BCFFB9 , #F5FDB0, #F7E6AD) ;
+}   
+h2{
+  text-align: center;
+  color: #000 ;
+  border: 1px solid #000;
+  padding: 15px;
+  font-size: 24px;
+  border-radius: 4px;
+  font-weight: bolder;
+ background-image: linear-gradient(-45deg, #28FFBF , #BCFFB9 , #F5FDB0, #F7E6AD) ;
+}
+body{
+  background-image: linear-gradient(45deg, #28FFBF , #BCFFB9 , #F5FDB0, #F7E6AD) ;
+}
+img{
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  border-radius: 10px;
+}
+p{
+  line-height: 1.5;
+  font-size: 16px;
+  margin: 20 0 10px;
+}
+span{
+display: block;
+font-size: 18px;
+margin: 20px 0 5px;
+color: black;
+padding: 15px;
+border: 1px solid black;
+border-radius: 4px;
+background-image: linear-gradient(45deg, #28FFBF , #BCFFB9 , #F5FDB0, #F7E6AD) ;
+}
+button{
+  display: block;
+  margin: 20px auto;
+  background-image: linear-gradient(-45deg,#28FFBF , #BCFFB9 , #F5FDB0, #F7E6AD) ;
+  color: black; 
+  font-size: 20px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0.3);
+  transition: all 200ms ease-in-out;
+  text-decoration: none;
+}
+button:hover{
+  opacity: 0.9;
+  cursor: pointer;
+  text-decoration: none;
+}
+.play{
+  text-decoration: none;
+  background-image: linear-gradient(45deg,#28FFBF , #BCFFB9 , #F5FDB0, #F7E6AD) ;
+}
+.container{
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px 60px;
+}
+.learn-more{
+  text-align: center;
+text-decoration: none;
+color: black;
+font-size: 15px;
+margin-top: 10px;
+}
+.learn-more:hover{
+  text-decoration: underline;
+}
+.footer{
+  text-align: center;
+  font-size: 15px;
+}
+  </style>
+<script type="text/javascript" src="chrome-extension://fdgeknolclccgmdhjhhoeacojohokdgh/content/neweggagent.js"></script></head>
+<body cz-shortcut-listen="true">
+  <div class="container">
+  <h1>
+    Welcome to Animal Crossing New Horizons
+  </h1>
+  <h2>
+    Where Everyone is Welcomed
+  </h2>
+  <div id="image-wrap">
+  <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/014/214/original/animal_crossing_gif.gif?1627623223" alt="Animal Crossing Screenshots">
+  <br>
+<span>
+    <strong>Animal Crossing </strong>
+    is a social simulation video game series developed and published by <em>Nintendo</em> and created by 
+    <em>Katsuya Eguchi and Hisashi Nogami</em>. 
+    In <strong>Animal Crossing</strong>, 
+    the player character is a human who lives in a village inhabited by various anthropomorphic animals, carrying out various activities such as fishing, bug catching, and fossil hunting. 
+    The series is notable for its open-ended gameplay and extensive use of the video game console's internal clock and calendar to simulate real passage of time.
+ </span> 
+ <hr>
+ <a href="https://en.wikipedia.org/wiki/Animal_Crossing" target="_blank" class="learn-more">
+  Learn More on Wikipedia 
+  </a>
+<button class="welcome-button">
+  Welcome Home 🏡 
+</button> 
+<a href="https://animal-crossing.com/" target="_blank" class="play">
+  <button class="play"> 
+  Let's Play 🎮
+  </button>
+  </a>
+  <p class="footer">
+  Coded by Dominique Rogers
+  </p>
+  </div>
+  <script>
+function welcome() {
+let name= prompt("What is your name?");
+let game= prompt("Do you enjoy playing video games?"); 
+
+if (name.length) {
+alert("Thank you, " + name + "! Let's play!") 
+} else {
+ alert("No name, let's try that again!")  
+}};
+
+   let welcomebutton = document.querySelector (".welcome-button")
+  welcomebutton.addEventListener("click" , welcome);
+   </script> 
+
+</div></body>
